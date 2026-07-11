@@ -1,0 +1,25 @@
+{
+  "name": "havre",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Havre — ton espace pour souffler. PWA de bien-être émotionnel, privacy-first, sans clé API.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "npm run build && python3 -m http.server 8501 --directory dist",
+    "dev": "python3 -m http.server 8501",
+    "cap:add:android": "npm run build && cap add android",
+    "cap:add:ios": "npm run build && cap add ios",
+    "cap:sync": "npm run build && cap sync",
+    "cap:open:android": "cap open android",
+    "cap:open:ios": "cap open ios"
+  },
+  "keywords": ["pwa", "wellbeing", "mental-health", "capacitor", "gen-z"],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  }
+}

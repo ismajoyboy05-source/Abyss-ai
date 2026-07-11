@@ -1,0 +1,16 @@
+{
+  "appId": "app.havre.wellbeing",
+  "appName": "Havre",
+  "webDir": "dist",
+  "backgroundColor": "#100f1a",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#100f1a"
+  },
+  "ios": {
+    "backgroundColor": "#100f1a",
+    "contentInset": "always"
+  }
+}

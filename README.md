@@ -69,6 +69,28 @@ python3 -m http.server 8501
 
 Ou avec Node : `npx serve .`
 
+## 🌐 Démo en ligne (GitHub Pages)
+
+Le workflow `.github/workflows/deploy-pages.yml` construit `dist/` et publie
+automatiquement sur GitHub Pages à chaque `push`. L'URL apparaît dans
+l'onglet **Actions** (généralement `https://<user>.github.io/Abyss-ai/`).
+
+## 📲 App mobile native (Capacitor)
+
+Le projet est **Capacitor-ready** (`capacitor.config.json`, `webDir: dist`).
+Pour générer et ouvrir l'app native :
+
+```bash
+npm install
+npm run build             # assemble dist/
+npm run cap:add:android   # ou cap:add:ios (macOS + Xcode)
+npm run cap:open:android  # ouvre Android Studio
+```
+
+Après chaque modification du web : `npm run cap:sync`.
+Les dossiers générés `android/` et `ios/` sont ignorés par git (ils se
+régénèrent). Testé : l'app Havre s'empaquette dans un projet Android natif.
+
 ## 🗂️ Structure
 
 ```
