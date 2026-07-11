@@ -1,0 +1,32 @@
+{
+  "name": "Havre — ton espace pour souffler",
+  "short_name": "Havre",
+  "description": "Un compagnon bienveillant pour comprendre tes émotions, respirer et avancer. Privé, gratuit, sans jugement.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#100f1a",
+  "theme_color": "#100f1a",
+  "lang": "fr",
+  "categories": ["health", "lifestyle", "wellbeing"],
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Respirer", "url": "./index.html#/breathe" },
+    { "name": "Parler au compagnon", "url": "./index.html#/chat" },
+    { "name": "Noter mon humeur", "url": "./index.html#/mood" }
+  ]
+}
