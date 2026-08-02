@@ -1,0 +1,267 @@
+<style>
+  :root{
+    --paper:#FFFDF5; --card:#FFFFFF; --ink:#2A2622; --muted:#8A7F6B;
+    --red:#E5372F; --chick:#F7DD5E; --bunny:#FFFFFF; --pink:#F6A6C0; --yolk:#F5A623; --sky:#7EC8F0;
+    --outline:#2A2622; --shadow:rgba(42,38,34,.95); --hair:#EFE7D2; --chip:#FFF3CF;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --paper:#1B1813; --card:#262019; --ink:#F4ECD6; --muted:#B3A688;
+      --outline:#0F0D09; --shadow:rgba(0,0,0,.85); --hair:#332C21; --chip:#332913; }
+  }
+  :root[data-theme="light"]{ --paper:#FFFDF5; --card:#FFFFFF; --ink:#2A2622; --muted:#8A7F6B; --outline:#2A2622; --shadow:rgba(42,38,34,.95); --hair:#EFE7D2; --chip:#FFF3CF; }
+  :root[data-theme="dark"]{ --paper:#1B1813; --card:#262019; --ink:#F4ECD6; --muted:#B3A688; --outline:#0F0D09; --shadow:rgba(0,0,0,.85); --hair:#332C21; --chip:#332913; }
+
+  *{box-sizing:border-box} body{margin:0}
+  .wrap{ font-family:'Trebuchet MS',-apple-system,'Segoe UI',system-ui,sans-serif;
+    background:var(--paper); color:var(--ink); min-height:100vh; padding:clamp(18px,4vw,48px); line-height:1.55;
+    background-image:radial-gradient(var(--hair) 1.4px,transparent 1.4px); background-size:22px 22px; }
+  .col{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(28px,5vw,54px)}
+
+  .display{ font-weight:900; line-height:.92; color:var(--chick);
+    -webkit-text-stroke:3px var(--outline); paint-order:stroke fill; text-shadow:5px 5px 0 var(--shadow); margin:0; }
+  .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700;color:var(--red)}
+  h2.sec{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:900;margin:0 0 2px;color:var(--ink);-webkit-text-stroke:1.4px var(--outline);paint-order:stroke fill;text-wrap:balance}
+  .sec-sub{color:var(--muted);margin:0 0 18px;font-size:.98rem}
+  p{margin:0 0 10px} code{background:var(--chip);border:1.5px solid var(--outline);border-radius:6px;padding:1px 5px;font-size:.85em}
+
+  .card{background:var(--card);border:3px solid var(--outline);border-radius:20px;box-shadow:6px 6px 0 var(--shadow);padding:clamp(16px,2.6vw,26px)}
+  .card.tight{padding:14px 16px}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .lift{transition:transform .15s ease,box-shadow .15s ease}
+  .lift:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--shadow)}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:var(--chip);border:2px solid var(--outline);border-radius:999px;padding:5px 12px;font-size:.8rem;font-weight:700;white-space:nowrap}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .kicker{font-weight:900;font-size:1.05rem;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+  .num{background:var(--chick);border:2.5px solid var(--outline);border-radius:10px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;font-weight:900;font-size:.95rem;flex:none;box-shadow:2px 2px 0 var(--shadow)}
+  ul.clean{margin:6px 0 0;padding-left:18px} ul.clean li{margin:4px 0}
+  .lead{font-size:1.05rem}
+  .foot{color:var(--muted);font-size:.85rem;text-align:center;padding-top:6px}
+
+  .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+  @media (max-width:640px){.hero{grid-template-columns:1fr;text-align:center}}
+  .hero .display{font-size:clamp(3rem,10vw,5.4rem)}
+  .duo{display:flex;justify-content:center;gap:6px}
+  .duo svg{width:46%;max-width:150px}
+  @media (prefers-reduced-motion:no-preference){
+    .bob{animation:bob 2.6s ease-in-out infinite;transform-origin:50% 90%}
+    .bob.b2{animation-delay:-1.3s}
+    @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+  }
+  .formula{background:var(--chick);color:#2A2622;border:3px solid #2A2622;border-radius:16px;box-shadow:5px 5px 0 rgba(42,38,34,.9);padding:14px 18px;font-weight:700}
+  .pouf{color:var(--red);font-weight:900;-webkit-text-stroke:1px var(--outline);paint-order:stroke fill}
+
+  /* roster */
+  .roster{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:640px){.roster{grid-template-columns:1fr}}
+  .rcard{display:flex;gap:14px;align-items:center}
+  .rcard svg{width:110px;flex:none}
+  .sig{font-weight:900;color:var(--red);-webkit-text-stroke:.6px var(--outline);paint-order:stroke fill}
+  .tag{font-weight:900;color:var(--red)}
+  table{width:100%;border-collapse:collapse;font-size:.92rem}
+  .scroll{overflow-x:auto}
+  th,td{text-align:left;padding:9px 10px;border-bottom:2px solid var(--hair);vertical-align:top}
+  th{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  td strong{color:var(--red)}
+
+  <!-- shared mascot builders -->
+</style>
+
+<!-- ================= DEFS (mascottes réutilisables) ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="m-pio">
+      <ellipse cx="100" cy="126" rx="64" ry="60" fill="#F7DD5E" stroke="#2A2622" stroke-width="6"/>
+      <ellipse cx="100" cy="140" rx="40" ry="40" fill="#FCEFA6"/>
+      <path d="M38 126 q-16 6 -6 28 q12 -4 14 -20 z" fill="#F7DD5E" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M162 126 q16 6 6 28 q-12 -4 -14 -20 z" fill="#F7DD5E" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M84 182 q-10 0 -14 8 M84 182 q0 6 0 10 M84 182 q10 0 14 8" fill="none" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+      <path d="M116 182 q-10 0 -14 8 M116 182 q0 6 0 10 M116 182 q10 0 14 8" fill="none" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="60" cy="142" rx="12" ry="7.5" fill="#F6A6A0" opacity="0.75"/>
+      <ellipse cx="140" cy="142" rx="12" ry="7.5" fill="#F6A6A0" opacity="0.75"/>
+      <ellipse cx="78" cy="118" rx="15" ry="17" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="80" cy="120" r="7" fill="#2A2622"/><circle cx="83" cy="116" r="2.6" fill="#fff"/>
+      <ellipse cx="122" cy="118" rx="15" ry="17" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="124" cy="120" r="7" fill="#2A2622"/><circle cx="127" cy="116" r="2.6" fill="#fff"/>
+      <path d="M66 100 q8 -8 18 -3 M116 97 q10 -5 18 3" fill="none" stroke="#2A2622" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="100" cy="148" rx="7" ry="9" fill="#F5A623" stroke="#2A2622" stroke-width="3"/><ellipse cx="100" cy="150" rx="3" ry="4" fill="#2A2622"/>
+      <path d="M48 92 q4 -52 52 -52 q48 0 52 52 z" fill="#E5372F" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="128" cy="66" rx="13" ry="9" fill="#C22B25"/>
+      <path d="M48 92 q-32 -2 -36 12 q3 9 15 9 q22 1 40 -7 z" fill="#C22B25" stroke="#2A2622" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M100 44 l4 8 9 1 -6.5 6 1.7 9 -8.2 -4.3 -8.2 4.3 1.7 -9 -6.5 -6 9 -1 z" fill="#FFD23F" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    <g id="m-lapo">
+      <path d="M64 96 q-34 10 -34 60 q0 34 26 34 q18 0 20 -30 q2 -34 8 -62 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M52 118 q-14 8 -14 40 q0 18 12 20 q8 -2 9 -22 q1 -22 5 -36 z" fill="#F6A6C0" opacity="0.85"/>
+      <path d="M136 96 q34 10 34 60 q0 34 -26 34 q-18 0 -20 -30 q-2 -34 -8 -62 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M148 118 q14 8 14 40 q0 18 -12 20 q-8 -2 -9 -22 q-1 -22 -5 -36 z" fill="#F6A6C0" opacity="0.85"/>
+      <ellipse cx="100" cy="128" rx="60" ry="58" fill="#FFFFFF" stroke="#2A2622" stroke-width="6"/>
+      <ellipse cx="100" cy="142" rx="38" ry="38" fill="#FBEDF0"/>
+      <path d="M52 150 q-12 10 -8 26 q10 0 16 -10 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M148 150 q12 10 8 26 q-10 0 -16 -10 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="58" cy="140" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.7"/>
+      <ellipse cx="142" cy="140" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.7"/>
+      <ellipse cx="80" cy="122" rx="14" ry="17" fill="#2A2622"/><circle cx="84" cy="115" r="3.4" fill="#fff"/><circle cx="76" cy="126" r="2" fill="#fff"/>
+      <ellipse cx="120" cy="122" rx="14" ry="17" fill="#2A2622"/><circle cx="124" cy="115" r="3.4" fill="#fff"/><circle cx="116" cy="126" r="2" fill="#fff"/>
+      <path d="M96 140 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M100 145 q-6 6 -12 3 M100 145 q6 6 12 3" fill="none" stroke="#2A2622" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M56 96 q4 -50 44 -50 q40 0 44 50 z" fill="#E5372F" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M56 96 q-4 6 40 6 q44 0 40 -6 z" fill="#C22B25" stroke="#2A2622" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <g id="m-pando">
+      <circle cx="50" cy="62" r="27" fill="#2B2723" stroke="#17140F" stroke-width="6"/>
+      <circle cx="150" cy="62" r="27" fill="#2B2723" stroke="#17140F" stroke-width="6"/>
+      <ellipse cx="100" cy="126" rx="64" ry="60" fill="#FFFFFF" stroke="#17140F" stroke-width="6"/>
+      <ellipse cx="100" cy="142" rx="33" ry="36" fill="#FBF3F2"/>
+      <path d="M50 146 q-22 8 -18 36 q16 2 28 -12 z" fill="#2B2723" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M150 146 q22 8 18 36 q-16 2 -28 -12 z" fill="#2B2723" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="80" cy="184" rx="18" ry="14" fill="#2B2723" stroke="#17140F" stroke-width="6"/><ellipse cx="80" cy="186" rx="8" ry="5" fill="#fff"/>
+      <ellipse cx="120" cy="184" rx="18" ry="14" fill="#2B2723" stroke="#17140F" stroke-width="6"/><ellipse cx="120" cy="186" rx="8" ry="5" fill="#fff"/>
+      <ellipse cx="50" cy="142" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.8"/>
+      <ellipse cx="150" cy="142" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.8"/>
+      <ellipse cx="74" cy="120" rx="20" ry="26" fill="#2B2723" stroke="#17140F" stroke-width="4" transform="rotate(-14 74 120)"/>
+      <ellipse cx="126" cy="120" rx="20" ry="26" fill="#2B2723" stroke="#17140F" stroke-width="4" transform="rotate(14 126 120)"/>
+      <ellipse cx="100" cy="134" rx="7" ry="5" fill="#2B2723"/>
+      <path d="M52 84 q6 -48 48 -48 q42 0 48 48 z" fill="#E5372F" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M64 60 q10 -18 34 -18" fill="none" stroke="#F6857E" stroke-width="6" stroke-linecap="round"/>
+      <path d="M100 48 l4.5 9 10 1 -7.2 7 1.9 10 -9.2 -5 -9.2 5 1.9 -10 -7.2 -7 10 -1 z" fill="#FFD23F" stroke="#17140F" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M74 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/>
+      <path d="M126 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/>
+      <path d="M88 148 q12 10 24 0" fill="none" stroke="#17140F" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="m-chato">
+      <path d="M42 74 L34 28 L78 56 Z" fill="#B8B8BC" stroke="#1C1917" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M48 64 L44 40 L66 54 Z" fill="#9A9AA0"/>
+      <path d="M158 74 L166 28 L122 56 Z" fill="#B8B8BC" stroke="#1C1917" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M152 64 L156 40 L134 54 Z" fill="#9A9AA0"/>
+      <ellipse cx="100" cy="128" rx="66" ry="62" fill="#B8B8BC" stroke="#1C1917" stroke-width="6"/>
+      <ellipse cx="100" cy="144" rx="42" ry="42" fill="#CFCFD3"/>
+      <path d="M34 128 l-24 -5 M34 138 l-26 3 M36 148 l-24 9" fill="none" stroke="#1C1917" stroke-width="4" stroke-linecap="round"/>
+      <path d="M166 128 l24 -5 M166 138 l26 3 M164 148 l24 9" fill="none" stroke="#1C1917" stroke-width="4" stroke-linecap="round"/>
+      <path d="M86 176 q-12 4 -8 20 q10 2 14 -8" fill="none" stroke="#1C1917" stroke-width="6" stroke-linecap="round"/>
+      <path d="M114 176 q12 4 8 20 q-10 2 -14 -8" fill="none" stroke="#1C1917" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="56" cy="150" rx="13" ry="8" fill="#F6A6C0" opacity="0.8"/>
+      <ellipse cx="144" cy="150" rx="13" ry="8" fill="#F6A6C0" opacity="0.8"/>
+      <path d="M92 134 q8 7 16 0 q-8 8 -16 0 z" fill="#F19BB4" stroke="#1C1917" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M52 82 q6 -48 48 -48 q42 0 48 48 z" fill="#2E7BC4" stroke="#1C1917" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M148 82 q32 -2 36 12 q-3 9 -15 9 q-22 1 -40 -7 z" fill="#2E7BC4" stroke="#1C1917" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M70 58 q10 -18 32 -18" fill="none" stroke="#7FB2E0" stroke-width="6" stroke-linecap="round"/>
+      <path d="M100 46 l4.5 9 10 1 -7.2 7 1.9 10 -9.2 -5 -9.2 5 1.9 -10 -7.2 -7 10 -1 z" fill="#FFD23F" stroke="#1C1917" stroke-width="2" stroke-linejoin="round"/>
+      <ellipse cx="78" cy="118" rx="16" ry="19" fill="#1C1917"/><path d="M78 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/>
+      <ellipse cx="122" cy="118" rx="16" ry="19" fill="#1C1917"/><path d="M122 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/>
+      <path d="M64 98 q10 -6 20 -1 M116 97 q10 -5 20 1" fill="none" stroke="#1C1917" stroke-width="4" stroke-linecap="round"/>
+      <path d="M100 142 q-9 12 -18 4 M100 142 q9 12 18 4" fill="none" stroke="#1C1917" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="wrap"><div class="col">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Univers de mascottes · TikTok + Instagram · multi-comptes</div>
+      <h1 class="display">L'UNIVERS</h1>
+      <p class="lead" style="margin-top:10px"><strong>Plusieurs mascottes, plusieurs comptes, un seul style trash-mignon.</strong> Vidéos courtes ultra-virales — inspirées de <em>@hamboom.world</em>, avec tes propres personnages.</p>
+      <div class="formula" style="margin-top:14px">La formule : une créature adorable et minuscule subit, à chaque épisode, une catastrophe absurde qui finit <span class="pouf">toujours</span> pareil.</div>
+      <div class="chips" style="margin-top:16px">
+        <span class="chip">📱 9:16</span><span class="chip">⏱️ 8–20 s</span><span class="chip">🗓️ 1–2 / jour / compte</span><span class="chip">⭐ casquette à étoile = fil rouge</span>
+      </div>
+    </div>
+    <div class="duo">
+      <svg class="bob" viewBox="0 0 200 200" role="img" aria-label="Pio, le poussin"><use href="#m-pio"/></svg>
+      <svg class="bob b2" viewBox="0 0 200 200" role="img" aria-label="Lapo, le lapin"><use href="#m-lapo"/></svg>
+      <svg class="bob" viewBox="0 0 200 200" role="img" aria-label="Pando, le panda"><use href="#m-pando"/></svg>
+      <svg class="bob b2" viewBox="0 0 200 200" role="img" aria-label="Chato, le chat"><use href="#m-chato"/></svg>
+    </div>
+  </header>
+
+  <!-- ROSTER -->
+  <section>
+    <div class="eyebrow">Le roster</div>
+    <h2 class="sec">Tes mascottes</h2>
+    <p class="sec-sub">Feuilles d'expressions complètes : <code>mascotte-pio / lapo / pando / chato .svg</code></p>
+    <div class="roster">
+      <div class="card lift rcard">
+        <svg viewBox="0 0 200 200" aria-label="Pio"><use href="#m-pio"/></svg>
+        <div>
+          <p class="kicker">Pio 🐤</p>
+          <p style="margin:0 0 6px">Poussin jaune, casquette rouge à étoile. <strong>La poisse</strong> : le quotidien qui tourne mal.</p>
+          <p style="margin:0">Signature : <span class="sig">POUF !</span> (aplati) · <code>@pio.world</code></p>
+        </div>
+      </div>
+      <div class="card lift rcard">
+        <svg viewBox="0 0 200 200" aria-label="Lapo"><use href="#m-lapo"/></svg>
+        <div>
+          <p class="kicker">Lapo 🐰</p>
+          <p style="margin:0 0 6px">Lapin blanc, casquette rouge, yeux pétillants. <strong>Le naïf survolté</strong> qui en fait trop.</p>
+          <p style="margin:0">Signature : <span class="sig">BOING !</span> (rebond → crash) · <code>@lapo.world</code></p>
+        </div>
+      </div>
+      <div class="card lift rcard">
+        <svg viewBox="0 0 200 200" aria-label="Pando"><use href="#m-pando"/></svg>
+        <div>
+          <p class="kicker">Pando 🐼</p>
+          <p style="margin:0 0 6px">Panda, casquette rouge à étoile. <strong>Le maladroit</strong> qui perd l'équilibre.</p>
+          <p style="margin:0">Signature : <span class="sig">BADABOUM !</span> (roule → dégringole) · <code>@pando.world</code></p>
+        </div>
+      </div>
+      <div class="card lift rcard">
+        <svg viewBox="0 0 200 200" aria-label="Chato"><use href="#m-chato"/></svg>
+        <div>
+          <p class="kicker">Chato 🐱</p>
+          <p style="margin:0 0 6px">Chat gris à moustaches, casquette bleue à étoile. <strong>Le prétentieux</strong> qui rate ses cascades.</p>
+          <p style="margin:0">Signature : <span class="sig">PAF !</span> (atterrissage raté) · <code>@chato.world</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STYLE + HUMOUR -->
+  <section>
+    <div class="eyebrow">Le style commun</div>
+    <h2 class="sec">Même moule pour tous les comptes</h2>
+    <div class="grid g3">
+      <div class="card lift"><p class="kicker"><span class="chip">80 %</span> Incrusté</p><p>Fond réel filmé au téléphone + mascotte cartoon incrustée. Rapide, scalable.</p></div>
+      <div class="card lift"><p class="kicker"><span class="chip">20 %</span> Dessiné</p><p>Décor 2D illustré, scène narrative en 3–5 plans, pour les épisodes premium.</p></div>
+      <div class="card lift"><p class="kicker">🎭 Humour</p><p>Contraste mignon ↔ trash (cartoon) + <strong>comique de répétition</strong> : la même chute à chaque fois.</p></div>
+    </div>
+  </section>
+
+  <!-- MULTI-COMPTES -->
+  <section>
+    <div class="eyebrow">Le nerf de la guerre</div>
+    <h2 class="sec">Faire tourner plusieurs comptes</h2>
+    <p class="sec-sub">Détail : <code>strategie-multi-comptes.md</code>. Le principe : mutualiser, différencier, cross-promouvoir.</p>
+    <div class="grid g2">
+      <div class="card lift"><p class="kicker"><span class="num">1</span> Mutualise</p><p>Banque de scripts commune (mascot-agnostique). Tourne <strong>1 fond</strong> → décline-le pour 2–3 mascottes en changeant le PNG. Une session = plusieurs comptes.</p></div>
+      <div class="card lift"><p class="kicker"><span class="num">2</span> Différencie</p><p>Chaque mascotte a sa <strong>personnalité</strong>, sa couleur et sa <strong>signature</strong> (POUF, BOING, BADABOUM, PAF…). Jamais le même fichier sur deux comptes → sinon flag spam.</p></div>
+      <div class="card lift"><p class="kicker"><span class="num">3</span> Cross-promeus</p><p>Épisodes <strong>crossover</strong> (« Pio rencontre Chato »), bios liées, handles cohérents. Tes comptes se nourrissent entre eux.</p></div>
+      <div class="card lift"><p class="kicker"><span class="num">4</span> Reste clean</p><p>Outils officiels only (planificateur natif, Meta Business Suite). <strong>Zéro bot</strong>. Label IA si IA. Sons natifs.</p></div>
+    </div>
+  </section>
+
+  <!-- FEUILLE DE ROUTE -->
+  <section>
+    <div class="eyebrow">Exécution</div>
+    <h2 class="sec">Feuille de route</h2>
+    <div class="card scroll">
+      <table>
+        <thead><tr><th>Période</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Semaine 1</strong></td><td>Lancer 2–3 mascottes prioritaires (TikTok + IG chacune), bios, photos, handles cohérents.</td></tr>
+          <tr><td><strong>Sem. 2–4</strong></td><td>1–2 vidéos/jour/compte. Repérer la gagnante (mascotte + angle).</td></tr>
+          <tr><td><strong>Mois 2</strong></td><td>Doubler sur la gagnante. Activer les mascottes suivantes <em>si</em> le pipeline tourne en batch.</td></tr>
+          <tr><td><strong>Règle</strong></td><td>N'ouvre un compte de plus que quand les précédents ne demandent qu'à être alimentés.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card" style="text-align:center"><div style="font-weight:900;font-size:1.5rem">&gt;100 %</div><div style="color:var(--muted);font-size:.85rem">Complétion (boucle)</div></div>
+      <div class="card" style="text-align:center"><div style="font-weight:900;font-size:1.5rem">Saves ≫ Likes</div><div style="color:var(--muted);font-size:.85rem">= distribution</div></div>
+      <div class="card" style="text-align:center"><div style="font-weight:900;font-size:1.5rem">2 comptes</div><div style="color:var(--muted);font-size:.85rem">au départ, puis scale</div></div>
+    </div>
+  </section>
+
+  <p class="foot">Playbook complet : <code>strategie-tiktok-instagram-mascotte.md</code> · Multi-comptes : <code>strategie-multi-comptes.md</code> · Scripts : <code>scripts-videos.md</code> · Mascottes : <code>mascotte-pio.svg</code>, <code>mascotte-lapo.svg</code></p>
+
+</div></div>
