@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1320" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <g id="pio">
+      <!-- corps -->
+      <ellipse cx="100" cy="126" rx="64" ry="60" fill="#F7DD5E" stroke="#2A2622" stroke-width="6"/>
+      <ellipse cx="100" cy="140" rx="40" ry="40" fill="#FCEFA6"/>
+      <!-- ailes -->
+      <path d="M38 126 q-16 6 -6 28 q12 -4 14 -20 z" fill="#F7DD5E" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M162 126 q16 6 6 28 q-12 -4 -14 -20 z" fill="#F7DD5E" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <!-- pattes -->
+      <path d="M84 182 q-10 0 -14 8 M84 182 q0 6 0 10 M84 182 q10 0 14 8" fill="none" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+      <path d="M116 182 q-10 0 -14 8 M116 182 q0 6 0 10 M116 182 q10 0 14 8" fill="none" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+      <!-- joues -->
+      <ellipse cx="60" cy="142" rx="12" ry="7.5" fill="#F6A6A0" opacity="0.75"/>
+      <ellipse cx="140" cy="142" rx="12" ry="7.5" fill="#F6A6A0" opacity="0.75"/>
+      <!-- casquette rouge -->
+      <path d="M48 92 q4 -52 52 -52 q48 0 52 52 z" fill="#E5372F" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="128" cy="66" rx="13" ry="9" fill="#C22B25"/>
+      <path d="M48 92 q-32 -2 -36 12 q3 9 15 9 q22 1 40 -7 z" fill="#C22B25" stroke="#2A2622" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M100 44 l4 8 9 1 -6.5 6 1.7 9 -8.2 -4.3 -8.2 4.3 1.7 -9 -6.5 -6 9 -1 z" fill="#FFD23F" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <rect width="1080" height="1320" fill="#FFFDF5"/>
+  <text x="540" y="70" text-anchor="middle" font-size="52" font-weight="bold" fill="#2A2622">PIO 🐤</text>
+  <text x="540" y="104" text-anchor="middle" font-size="24" fill="#8A7F6B">poussin à casquette — feuille d'expressions · chute « POUF ! »</text>
+
+  <!-- LIGNE 1 -->
+  <g transform="translate(100,150)"><use href="#pio"/>
+    <ellipse cx="78" cy="118" rx="15" ry="17" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="80" cy="120" r="7" fill="#2A2622"/><circle cx="83" cy="116" r="2.6" fill="#fff"/>
+    <ellipse cx="122" cy="118" rx="15" ry="17" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="124" cy="120" r="7" fill="#2A2622"/><circle cx="127" cy="116" r="2.6" fill="#fff"/>
+    <path d="M66 100 q8 -8 18 -3 M116 97 q10 -5 18 3" fill="none" stroke="#2A2622" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="100" cy="148" rx="7" ry="9" fill="#F5A623" stroke="#2A2622" stroke-width="3"/><ellipse cx="100" cy="150" rx="3" ry="4" fill="#2A2622"/>
+  </g>
+  <text x="200" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Surpris</text>
+
+  <g transform="translate(440,150)"><use href="#pio"/>
+    <path d="M64 120 q9 -13 18 0" fill="none" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M118 120 q9 -13 18 0" fill="none" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M90 134 q10 10 20 0 z" fill="#C8641E" stroke="#2A2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <text x="540" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Content</text>
+
+  <g transform="translate(780,150)"><use href="#pio"/>
+    <circle cx="80" cy="120" r="8" fill="#2A2622"/><circle cx="120" cy="120" r="8" fill="#2A2622"/>
+    <path d="M100 132 l8 6 -8 6 -8 -6 z" fill="#F5A623" stroke="#2A2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <text x="880" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Neutre</text>
+
+  <!-- LIGNE 2 -->
+  <g transform="translate(100,480)"><use href="#pio"/>
+    <ellipse cx="78" cy="118" rx="17" ry="19" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="79" cy="121" r="6" fill="#2A2622"/>
+    <ellipse cx="122" cy="118" rx="17" ry="19" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="123" cy="121" r="6" fill="#2A2622"/>
+    <ellipse cx="100" cy="150" rx="9" ry="12" fill="#C8641E" stroke="#2A2622" stroke-width="3"/>
+    <path d="M152 104 q6 9 0 16 q-6 -7 0 -16 z" fill="#7EC8F0" stroke="#2A2622" stroke-width="2"/>
+  </g>
+  <text x="200" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Panique</text>
+
+  <g transform="translate(440,480)"><use href="#pio"/>
+    <path d="M64 108 l22 8" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M136 108 l-22 8" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="80" cy="122" r="8" fill="#2A2622"/><circle cx="120" cy="122" r="8" fill="#2A2622"/>
+    <path d="M100 134 l8 6 -8 6 -8 -6 z" fill="#F5A623" stroke="#2A2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <text x="540" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Grognon</text>
+
+  <g transform="translate(780,480)"><use href="#pio"/>
+    <path d="M72 112 l14 14 M86 112 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M114 112 l14 14 M128 112 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="100" cy="146" rx="7" ry="5" fill="#C8641E"/>
+    <text x="150" y="86" font-size="26" fill="#FFD23F">✦</text>
+  </g>
+  <text x="880" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">KO (x_x)</text>
+
+  <!-- SIGNATURE -->
+  <line x1="90" y1="778" x2="990" y2="778" stroke="#EAE2CF" stroke-width="3"/>
+  <text x="540" y="828" text-anchor="middle" font-size="30" font-weight="bold" fill="#2A2622">Chute signature — « POUF ! »</text>
+  <g transform="translate(540,945)">
+    <path d="M-150 20 q-20 -40 20 -46 q6 -30 44 -20 q24 -26 54 -2 q34 -8 34 24 q30 6 16 34 q10 26 -22 26 l-172 0 q-30 2 -24 -26 z" fill="#FFF4CC" stroke="#2A2622" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="34" rx="120" ry="26" fill="#F7DD5E" stroke="#2A2622" stroke-width="6"/>
+    <ellipse cx="0" cy="40" rx="70" ry="12" fill="#FCEFA6"/>
+    <path d="M-34 26 l14 14 M-20 26 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M20 26 l14 14 M34 26 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="2" cy="44" rx="5" ry="4" fill="#C8641E"/>
+    <!-- casquette éjectée -->
+    <g transform="translate(120,-30) rotate(20)"><path d="M0 0 q2 -22 22 -22 q20 0 22 22 z" fill="#E5372F" stroke="#2A2622" stroke-width="4"/><path d="M0 0 q-14 0 -16 6 q2 4 8 4 q10 0 18 -4 z" fill="#C22B25" stroke="#2A2622" stroke-width="3"/></g>
+    <text x="150" y="6" font-size="46" font-weight="bold" fill="#E5372F" transform="rotate(-8 150 6)">POUF!</text>
+  </g>
+
+  <!-- PALETTE -->
+  <text x="90" y="1092" font-size="26" font-weight="bold" fill="#2A2622">Palette (fixe)</text>
+  <g transform="translate(90,1112)">
+    <rect x="0" y="0" width="150" height="70" rx="10" fill="#F7DD5E" stroke="#2A2622" stroke-width="3"/>
+    <rect x="165" y="0" width="150" height="70" rx="10" fill="#FCEFA6" stroke="#2A2622" stroke-width="3"/>
+    <rect x="330" y="0" width="150" height="70" rx="10" fill="#E5372F" stroke="#2A2622" stroke-width="3"/>
+    <rect x="495" y="0" width="150" height="70" rx="10" fill="#F5A623" stroke="#2A2622" stroke-width="3"/>
+    <rect x="660" y="0" width="150" height="70" rx="10" fill="#F6A6A0" stroke="#2A2622" stroke-width="3"/>
+    <rect x="825" y="0" width="150" height="70" rx="10" fill="#2A2622" stroke="#2A2622" stroke-width="3"/>
+    <text x="75" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F7DD5E corps</text>
+    <text x="240" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#FCEFA6 ventre</text>
+    <text x="405" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#E5372F casquette</text>
+    <text x="570" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F5A623 bec/pattes</text>
+    <text x="735" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F6A6A0 joues</text>
+    <text x="900" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#2A2622 contour</text>
+  </g>
+</svg>

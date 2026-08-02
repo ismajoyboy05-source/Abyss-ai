@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1320" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <g id="pando">
+      <!-- oreilles -->
+      <circle cx="50" cy="62" r="27" fill="#2B2723" stroke="#17140F" stroke-width="6"/>
+      <circle cx="150" cy="62" r="27" fill="#2B2723" stroke="#17140F" stroke-width="6"/>
+      <!-- corps -->
+      <ellipse cx="100" cy="126" rx="64" ry="60" fill="#FFFFFF" stroke="#17140F" stroke-width="6"/>
+      <ellipse cx="100" cy="142" rx="33" ry="36" fill="#FBF3F2"/>
+      <!-- bras -->
+      <path d="M50 146 q-22 8 -18 36 q16 2 28 -12 z" fill="#2B2723" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M150 146 q22 8 18 36 q-16 2 -28 -12 z" fill="#2B2723" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <!-- pattes -->
+      <ellipse cx="80" cy="184" rx="18" ry="14" fill="#2B2723" stroke="#17140F" stroke-width="6"/><ellipse cx="80" cy="186" rx="8" ry="5" fill="#fff"/>
+      <ellipse cx="120" cy="184" rx="18" ry="14" fill="#2B2723" stroke="#17140F" stroke-width="6"/><ellipse cx="120" cy="186" rx="8" ry="5" fill="#fff"/>
+      <!-- joues -->
+      <ellipse cx="50" cy="142" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.8"/>
+      <ellipse cx="150" cy="142" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.8"/>
+      <!-- taches des yeux -->
+      <ellipse cx="74" cy="120" rx="20" ry="26" fill="#2B2723" stroke="#17140F" stroke-width="4" transform="rotate(-14 74 120)"/>
+      <ellipse cx="126" cy="120" rx="20" ry="26" fill="#2B2723" stroke="#17140F" stroke-width="4" transform="rotate(14 126 120)"/>
+      <!-- nez -->
+      <ellipse cx="100" cy="134" rx="7" ry="5" fill="#2B2723"/>
+      <!-- casquette -->
+      <path d="M52 84 q6 -48 48 -48 q42 0 48 48 z" fill="#E5372F" stroke="#17140F" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M64 60 q10 -18 34 -18" fill="none" stroke="#F6857E" stroke-width="6" stroke-linecap="round"/>
+      <path d="M100 48 l4.5 9 10 1 -7.2 7 1.9 10 -9.2 -5 -9.2 5 1.9 -10 -7.2 -7 10 -1 z" fill="#FFD23F" stroke="#17140F" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <rect width="1080" height="1320" fill="#FFFDF5"/>
+  <text x="540" y="70" text-anchor="middle" font-size="52" font-weight="bold" fill="#2A2622">PANDO 🐼</text>
+  <text x="540" y="104" text-anchor="middle" font-size="24" fill="#8A7F6B">panda à casquette — feuille d'expressions · roule « BADABOUM ! »</text>
+
+  <!-- LIGNE 1 -->
+  <g transform="translate(100,150)"><use href="#pando"/>
+    <path d="M74 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/><circle cx="84" cy="110" r="2.4" fill="#fff"/>
+    <path d="M126 104 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#fff"/><circle cx="136" cy="110" r="2.4" fill="#fff"/>
+    <path d="M88 148 q12 10 24 0" fill="none" stroke="#17140F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Content ✦</text>
+
+  <g transform="translate(440,150)"><use href="#pando"/>
+    <circle cx="74" cy="118" r="10" fill="#fff"/><circle cx="75" cy="120" r="4.5" fill="#2B2723"/>
+    <circle cx="126" cy="118" r="10" fill="#fff"/><circle cx="125" cy="120" r="4.5" fill="#2B2723"/>
+    <ellipse cx="100" cy="150" rx="6" ry="7" fill="#8A5A2B" stroke="#17140F" stroke-width="2.5"/>
+  </g>
+  <text x="540" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Surpris</text>
+
+  <g transform="translate(780,150)"><use href="#pando"/>
+    <circle cx="76" cy="120" r="6" fill="#fff"/><circle cx="124" cy="120" r="6" fill="#fff"/>
+    <path d="M90 148 q10 7 20 0" fill="none" stroke="#17140F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="880" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Neutre</text>
+
+  <!-- LIGNE 2 -->
+  <g transform="translate(100,480)"><use href="#pando"/>
+    <circle cx="74" cy="118" r="12" fill="#fff"/><circle cx="74" cy="120" r="5" fill="#2B2723"/>
+    <circle cx="126" cy="118" r="12" fill="#fff"/><circle cx="126" cy="120" r="5" fill="#2B2723"/>
+    <path d="M92 150 q8 -6 16 0" fill="none" stroke="#17140F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M156 104 q6 9 0 16 q-6 -7 0 -16 z" fill="#7EC8F0" stroke="#17140F" stroke-width="2"/>
+  </g>
+  <text x="200" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Panique</text>
+
+  <g transform="translate(440,480)"><use href="#pando"/>
+    <path d="M60 100 l24 6" stroke="#17140F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M140 100 l-24 6" stroke="#17140F" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="76" cy="122" r="6" fill="#fff"/><circle cx="124" cy="122" r="6" fill="#fff"/>
+    <path d="M90 152 q10 6 20 0" fill="none" stroke="#17140F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="540" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Grognon</text>
+
+  <g transform="translate(780,480)"><use href="#pando"/>
+    <path d="M68 112 l12 12 M80 112 l-12 12" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M120 112 l12 12 M132 112 l-12 12" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+    <ellipse cx="100" cy="150" rx="7" ry="5" fill="#8A5A2B"/>
+    <text x="150" y="86" font-size="26" fill="#FFD23F">✦</text>
+  </g>
+  <text x="880" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">KO (x_x)</text>
+
+  <!-- SIGNATURE -->
+  <line x1="90" y1="778" x2="990" y2="778" stroke="#EAE2CF" stroke-width="3"/>
+  <text x="540" y="828" text-anchor="middle" font-size="30" font-weight="bold" fill="#2A2622">Roule signature — « BADABOUM ! »</text>
+  <text x="540" y="858" text-anchor="middle" font-size="20" fill="#8A7F6B">Pando se met en boule et dévale tout</text>
+  <g transform="translate(430,945)">
+    <path d="M-40 40 q60 -70 150 -10" fill="none" stroke="#F6A6C0" stroke-width="4" stroke-dasharray="6 9" stroke-linecap="round"/>
+    <!-- boule panda -->
+    <g transform="translate(120,10)">
+      <circle cx="0" cy="0" r="46" fill="#FFFFFF" stroke="#17140F" stroke-width="6"/>
+      <circle cx="-30" cy="-30" r="15" fill="#2B2723" stroke="#17140F" stroke-width="4"/>
+      <circle cx="30" cy="-30" r="15" fill="#2B2723" stroke="#17140F" stroke-width="4"/>
+      <ellipse cx="-16" cy="4" rx="12" ry="15" fill="#2B2723"/><ellipse cx="16" cy="4" rx="12" ry="15" fill="#2B2723"/>
+      <path d="M-20 -2 l9 9 M-11 -2 l-9 9" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M11 -2 l9 9 M20 -2 l-9 9" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- traits de vitesse -->
+      <path d="M-64 -14 l-18 -4 M-66 2 l-20 0 M-62 18 l-18 6" stroke="#2A2622" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text x="210" y="20" font-size="40" font-weight="bold" fill="#E5372F" transform="rotate(-8 210 20)">BADABOUM!</text>
+  </g>
+
+  <!-- PALETTE -->
+  <text x="90" y="1092" font-size="26" font-weight="bold" fill="#2A2622">Palette (fixe)</text>
+  <g transform="translate(90,1112)">
+    <rect x="0" y="0" width="150" height="70" rx="10" fill="#FFFFFF" stroke="#2A2622" stroke-width="3"/>
+    <rect x="165" y="0" width="150" height="70" rx="10" fill="#2B2723" stroke="#2A2622" stroke-width="3"/>
+    <rect x="330" y="0" width="150" height="70" rx="10" fill="#E5372F" stroke="#2A2622" stroke-width="3"/>
+    <rect x="495" y="0" width="150" height="70" rx="10" fill="#FFD23F" stroke="#2A2622" stroke-width="3"/>
+    <rect x="660" y="0" width="150" height="70" rx="10" fill="#F6A6C0" stroke="#2A2622" stroke-width="3"/>
+    <rect x="825" y="0" width="150" height="70" rx="10" fill="#17140F" stroke="#2A2622" stroke-width="3"/>
+    <text x="75" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#FFFFFF corps</text>
+    <text x="240" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#2B2723 noir</text>
+    <text x="405" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#E5372F casquette</text>
+    <text x="570" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#FFD23F étoile</text>
+    <text x="735" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F6A6C0 joues</text>
+    <text x="900" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#17140F contour</text>
+  </g>
+</svg>

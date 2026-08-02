@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1320" font-family="'Trebuchet MS','Segoe UI',sans-serif">
+  <defs>
+    <g id="lapo">
+      <!-- oreilles tombantes -->
+      <path d="M64 96 q-34 10 -34 60 q0 34 26 34 q18 0 20 -30 q2 -34 8 -62 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M52 118 q-14 8 -14 40 q0 18 12 20 q8 -2 9 -22 q1 -22 5 -36 z" fill="#F6A6C0" opacity="0.85"/>
+      <path d="M136 96 q34 10 34 60 q0 34 -26 34 q-18 0 -20 -30 q-2 -34 -8 -62 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M148 118 q14 8 14 40 q0 18 -12 20 q-8 -2 -9 -22 q-1 -22 -5 -36 z" fill="#F6A6C0" opacity="0.85"/>
+      <!-- corps -->
+      <ellipse cx="100" cy="128" rx="60" ry="58" fill="#FFFFFF" stroke="#2A2622" stroke-width="6"/>
+      <ellipse cx="100" cy="142" rx="38" ry="38" fill="#FBEDF0"/>
+      <!-- bras/pattes -->
+      <path d="M52 150 q-12 10 -8 26 q10 0 16 -10 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M148 150 q12 10 8 26 q-10 0 -16 -10 z" fill="#FFFFFF" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <!-- joues -->
+      <ellipse cx="58" cy="140" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.7"/>
+      <ellipse cx="142" cy="140" rx="12" ry="7.5" fill="#F6A6C0" opacity="0.7"/>
+      <!-- casquette rouge -->
+      <path d="M56 96 q4 -50 44 -50 q40 0 44 50 z" fill="#E5372F" stroke="#2A2622" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M100 46 q-2 -14 8 -16 M100 44 q2 -12 12 -8" fill="none" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+      <path d="M56 96 q-4 6 40 6 q44 0 40 -6 z" fill="#C22B25" stroke="#2A2622" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <rect width="1080" height="1320" fill="#FFFDF5"/>
+  <text x="540" y="70" text-anchor="middle" font-size="52" font-weight="bold" fill="#2A2622">LAPO 🐰</text>
+  <text x="540" y="104" text-anchor="middle" font-size="24" fill="#8A7F6B">lapin à casquette — feuille d'expressions · rebond « BOING ! »</text>
+
+  <!-- LIGNE 1 -->
+  <g transform="translate(100,150)"><use href="#lapo"/>
+    <ellipse cx="80" cy="122" rx="14" ry="17" fill="#2A2622"/><circle cx="84" cy="115" r="3.4" fill="#fff"/><circle cx="76" cy="126" r="2" fill="#fff"/>
+    <ellipse cx="120" cy="122" rx="14" ry="17" fill="#2A2622"/><circle cx="124" cy="115" r="3.4" fill="#fff"/><circle cx="116" cy="126" r="2" fill="#fff"/>
+    <path d="M96 140 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M100 145 q-6 6 -12 3 M100 145 q6 6 12 3" fill="none" stroke="#2A2622" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Content ✦</text>
+
+  <g transform="translate(440,150)"><use href="#lapo"/>
+    <ellipse cx="80" cy="122" rx="16" ry="19" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="80" cy="124" r="7" fill="#2A2622"/>
+    <ellipse cx="120" cy="122" rx="16" ry="19" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="120" cy="124" r="7" fill="#2A2622"/>
+    <path d="M96 142 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="100" cy="152" rx="6" ry="7" fill="#C56074" stroke="#2A2622" stroke-width="2.5"/>
+  </g>
+  <text x="540" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Surpris</text>
+
+  <g transform="translate(780,150)"><use href="#lapo"/>
+    <path d="M70 122 q10 -12 20 0" fill="none" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M110 122 q10 -12 20 0" fill="none" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M96 140 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M92 146 q8 8 16 0" fill="none" stroke="#2A2622" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text x="880" y="372" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Neutre</text>
+
+  <!-- LIGNE 2 -->
+  <g transform="translate(100,480)"><use href="#lapo"/>
+    <ellipse cx="80" cy="122" rx="17" ry="20" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="80" cy="125" r="6" fill="#2A2622"/>
+    <ellipse cx="120" cy="122" rx="17" ry="20" fill="#fff" stroke="#2A2622" stroke-width="4"/><circle cx="120" cy="125" r="6" fill="#2A2622"/>
+    <path d="M96 142 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="100" cy="152" rx="8" ry="10" fill="#C56074" stroke="#2A2622" stroke-width="2.5"/>
+    <path d="M154 108 q6 9 0 16 q-6 -7 0 -16 z" fill="#7EC8F0" stroke="#2A2622" stroke-width="2"/>
+  </g>
+  <text x="200" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Panique</text>
+
+  <g transform="translate(440,480)"><use href="#lapo"/>
+    <path d="M74 116 l12 10 M74 130 l12 -10" stroke="#2A2622" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M126 116 l-12 10 M126 130 l-12 -10" stroke="#2A2622" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M96 140 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M100 145 q-6 6 -12 3 M100 145 q6 6 12 3" fill="none" stroke="#2A2622" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M70 106 q4 6 -2 10 M78 104 q3 6 -3 9" stroke="#F19BB4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="540" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">Étoilé / amoureux</text>
+
+  <g transform="translate(780,480)"><use href="#lapo"/>
+    <path d="M72 114 l14 14 M86 114 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M114 114 l14 14 M128 114 l-14 14" stroke="#2A2622" stroke-width="5" stroke-linecap="round"/>
+    <path d="M96 142 l4 5 4 -5 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M90 150 q10 -6 20 0" fill="none" stroke="#2A2622" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="150" y="90" font-size="26" fill="#F6A6C0">✦</text>
+  </g>
+  <text x="880" y="700" text-anchor="middle" font-size="22" font-weight="bold" fill="#2A2622">KO (x_x)</text>
+
+  <!-- SIGNATURE -->
+  <line x1="90" y1="778" x2="990" y2="778" stroke="#EAE2CF" stroke-width="3"/>
+  <text x="540" y="828" text-anchor="middle" font-size="30" font-weight="bold" fill="#2A2622">Rebond signature — « BOING ! »</text>
+  <text x="540" y="858" text-anchor="middle" font-size="20" fill="#8A7F6B">Lapo rebondit trop haut… puis s'écrase</text>
+  <g transform="translate(430,940)">
+    <!-- arcs de rebond -->
+    <path d="M-20 60 q40 -90 80 0" fill="none" stroke="#F6A6C0" stroke-width="4" stroke-dasharray="6 8" stroke-linecap="round"/>
+    <path d="M20 60 q40 -70 80 0" fill="none" stroke="#F6A6C0" stroke-width="4" stroke-dasharray="6 8" stroke-linecap="round"/>
+    <!-- lapo étiré en rebond -->
+    <g transform="translate(120,-6)">
+      <ellipse cx="0" cy="0" rx="34" ry="46" fill="#FFFFFF" stroke="#2A2622" stroke-width="6"/>
+      <path d="M-16 -40 l14 14 M-2 -40 l-14 14" stroke="#2A2622" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M2 -40 l14 14 M16 -40 l-14 14" stroke="#2A2622" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M-6 -20 l6 7 6 -7 z" fill="#F19BB4" stroke="#2A2622" stroke-width="2"/>
+      <path d="M-40 -80 q-20 4 -22 40 M40 -80 q20 4 22 40" fill="none" stroke="#2A2622" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <text x="230" y="30" font-size="46" font-weight="bold" fill="#E5372F" transform="rotate(-8 230 30)">BOING!</text>
+    <text x="70" y="-30" font-size="24" fill="#F6A6C0">✦</text>
+  </g>
+
+  <!-- PALETTE -->
+  <text x="90" y="1092" font-size="26" font-weight="bold" fill="#2A2622">Palette (fixe)</text>
+  <g transform="translate(90,1112)">
+    <rect x="0" y="0" width="150" height="70" rx="10" fill="#FFFFFF" stroke="#2A2622" stroke-width="3"/>
+    <rect x="165" y="0" width="150" height="70" rx="10" fill="#FBEDF0" stroke="#2A2622" stroke-width="3"/>
+    <rect x="330" y="0" width="150" height="70" rx="10" fill="#E5372F" stroke="#2A2622" stroke-width="3"/>
+    <rect x="495" y="0" width="150" height="70" rx="10" fill="#F6A6C0" stroke="#2A2622" stroke-width="3"/>
+    <rect x="660" y="0" width="150" height="70" rx="10" fill="#F19BB4" stroke="#2A2622" stroke-width="3"/>
+    <rect x="825" y="0" width="150" height="70" rx="10" fill="#2A2622" stroke="#2A2622" stroke-width="3"/>
+    <text x="75" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#FFFFFF corps</text>
+    <text x="240" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#FBEDF0 ventre</text>
+    <text x="405" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#E5372F casquette</text>
+    <text x="570" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F6A6C0 oreilles</text>
+    <text x="735" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#F19BB4 nez</text>
+    <text x="900" y="98" text-anchor="middle" font-size="15" fill="#2A2622">#2A2622 contour</text>
+  </g>
+</svg>
